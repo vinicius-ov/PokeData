@@ -1,0 +1,6 @@
+framework module Pods_Pokedata {
+  umbrella header "Pods-Pokedata-umbrella.h"
+
+  export *
+  module * { export * }
+}

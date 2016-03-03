@@ -11,7 +11,7 @@ import XCTest
 
 class PokedataTests: XCTestCase {
     
-    let trainer: Trainer!
+    //let trainer: Trainer!
     
     override func setUp() {
         super.setUp()
