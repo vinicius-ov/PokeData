@@ -41,7 +41,7 @@ class LoginViewController: UIViewController, NSURLSessionTaskDelegate {
                     print(self.json.valueForKeyPath("data"))
                     self.json = self.json.valueForKeyPath("data") as! [String:AnyObject]
                     self.trainer = Trainer(json: self.json)
-                    self.performSegueWithIdentifier("gotoTrainerData", sender: self)
+                    //self.performSegueWithIdentifier("gotoTrainerData", sender: self)
                 } catch {
                     print(error)
                 }
@@ -53,11 +53,37 @@ class LoginViewController: UIViewController, NSURLSessionTaskDelegate {
         
     }
     
+    func loginTrainer(completion: (result: String) -> Void) {
+        
+        Alamofire.request(.GET, "http://server03.local:60080/login", parameters: ["user": "ash","password": "mistyS2"]).response { request, response, data, error in
+            print(request)
+            print(response)
+            print(error)
+            if response!.statusCode == 200{
+                do {
+                    self.json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions()) as? [String: AnyObject]
+                    print(self.json.valueForKeyPath("data"))
+                    self.json = self.json.valueForKeyPath("data") as! [String:AnyObject]
+                    self.trainer = Trainer(json: self.json)
+                } catch {
+                    print(error)
+                }
+            }else{
+                print("deu merda")
+                //mensagem de login falhado, avisar
+            }
+        }
+        
+    }
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let page = segue.destinationViewController as! UINavigationController
         (page.viewControllers[0] as! TrainerDataViewController).loggedTrainer = trainer
-//        let vc = segue.destinationViewController as! TrainerDataViewController
-//    vc.loggedTrainer = trainer
+        //        let vc = segue.destinationViewController as! TrainerDataViewController
+        //    vc.loggedTrainer = trainer
     }
+    
+    
     
 }

@@ -7,6 +7,7 @@
 //
 
 import Gloss
+import Alamofire
 
 struct Trainer: Decodable {
 
@@ -15,6 +16,8 @@ struct Trainer: Decodable {
     var photo:			String?
     var town:			String?
     var onHandPokemons:	Array<Pokemon>?
+    
+    var json: [String:AnyObject]!
     
     init?(json: JSON){
         self.name = "name" <~~ json
@@ -25,5 +28,6 @@ struct Trainer: Decodable {
         let pokeArray = json.valueForKeyPath("onHandPokemons") as! [JSON]
         self.onHandPokemons = Array<Pokemon>.fromJSONArray(pokeArray)
     }
+    
     
 }

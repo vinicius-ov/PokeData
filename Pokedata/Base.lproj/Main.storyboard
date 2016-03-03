@@ -409,6 +409,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="capa" width="496" height="371"/>
+        <image name="capa" width="248" height="185"/>
     </resources>
 </document>

@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "capa.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "capa.png",
       "scale" : "2x"
     },
     {

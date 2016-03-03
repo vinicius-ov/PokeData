@@ -11,14 +11,12 @@ import XCTest
 
 class PokedataTests: XCTestCase {
     
-    //let trainer: Trainer!
+    var lm = LoginViewController()
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        
-        
+        // Put setup code here. This method is called before the invocation of each test method in the class
+
     }
     
     override func tearDown() {
@@ -27,8 +25,16 @@ class PokedataTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let expectation = expectationWithDescription("Swift Expectations")
+        
+        lm.loginTrainer({success in
+            XCTAssertNotNil(self.lm.trainer)
+            expectation.fulfill()
+        })
+        
+        waitForExpectationsWithTimeout(100.0, handler:nil)
+
     }
     
     func testPerformanceExample() {

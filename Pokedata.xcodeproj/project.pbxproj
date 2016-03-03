@@ -23,9 +23,9 @@
 		F2B41B1F1C853D7D00DD5D9D /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B41B1E1C853D7D00DD5D9D /* Pokemon.swift */; };
 		F2B41B211C85407800DD5D9D /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B41B201C85407800DD5D9D /* Status.swift */; };
 		F2B41B231C85408400DD5D9D /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B41B221C85408400DD5D9D /* Skill.swift */; };
-		F2B41B441C85FAD200DD5D9D /* Pods_Pokedata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8AF48836E093CF88D7797F /* Pods_Pokedata.framework */; };
 		F2B41B451C85FAD200DD5D9D /* Pods_Pokedata.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8AF48836E093CF88D7797F /* Pods_Pokedata.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2C5FEB11C8773E600A6B2D7 /* PokemonDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C5FEB01C8773E600A6B2D7 /* PokemonDataViewController.swift */; };
+		F2C5FEB51C88B05400A6B2D7 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C5FEB41C88B05400A6B2D7 /* LoginManager.swift */; };
 		F2D227D11C8628950095B2DC /* TrainerDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D227D01C8628950095B2DC /* TrainerDataViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +86,7 @@
 		F2B41B201C85407800DD5D9D /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		F2B41B221C85408400DD5D9D /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		F2C5FEB01C8773E600A6B2D7 /* PokemonDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDataViewController.swift; sourceTree = "<group>"; };
+		F2C5FEB41C88B05400A6B2D7 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		F2D227D01C8628950095B2DC /* TrainerDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0D06C2E802CF52B47084BC6 /* Pods_Pokedata.framework in Frameworks */,
-				F2B41B441C85FAD200DD5D9D /* Pods_Pokedata.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +167,7 @@
 				F2B41B1E1C853D7D00DD5D9D /* Pokemon.swift */,
 				F2C5FEB01C8773E600A6B2D7 /* PokemonDataViewController.swift */,
 				F2B41B1A1C853D1600DD5D9D /* LoginContainer.swift */,
+				F2C5FEB41C88B05400A6B2D7 /* LoginManager.swift */,
 				F27F053A1C86055600712034 /* LoginReturn.swift */,
 				F2B41B221C85408400DD5D9D /* Skill.swift */,
 				F2039F261C853B6800D28BAE /* LoginViewController.swift */,
@@ -387,6 +388,7 @@
 				F2039EFE1C853B3D00D28BAE /* Pokedata.xcdatamodeld in Sources */,
 				F27F053B1C86055600712034 /* LoginReturn.swift in Sources */,
 				F2B41B231C85408400DD5D9D /* Skill.swift in Sources */,
+				F2C5FEB51C88B05400A6B2D7 /* LoginManager.swift in Sources */,
 				F2B41B211C85407800DD5D9D /* Status.swift in Sources */,
 				F2039EF81C853B3D00D28BAE /* ViewController.swift in Sources */,
 				F2B41B1D1C853D3800DD5D9D /* Trainer.swift in Sources */,

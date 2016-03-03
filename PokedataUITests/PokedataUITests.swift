@@ -7,9 +7,13 @@
 //
 
 import XCTest
+//@testable import Pokedata
+
 
 class PokedataUITests: XCTestCase {
         
+    //var lvc:LoginViewController!
+    
     override func setUp() {
         super.setUp()
         
