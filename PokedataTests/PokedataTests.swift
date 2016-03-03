@@ -30,10 +30,11 @@ class PokedataTests: XCTestCase {
         
         lm.loginTrainer({success in
             XCTAssertNotNil(self.lm.trainer)
+            XCTAssertEqual(self.lm.trainer.name, "Ash Ketchum")
             expectation.fulfill()
         })
         
-        waitForExpectationsWithTimeout(100.0, handler:nil)
+        waitForExpectationsWithTimeout(10.0, handler:nil)
 
     }
     
