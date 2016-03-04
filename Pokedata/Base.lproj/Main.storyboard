@@ -57,7 +57,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hVO-kF-qsP">
             <objects>
-                <navigationController id="byJ-lU-iEd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="daNavi" id="byJ-lU-iEd" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dIk-we-mrv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -97,7 +97,7 @@
                                         <rect key="frame" x="0.0" y="28" width="312" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5bv-IS-fcf" id="7gY-ob-hn5">
-                                            <rect key="frame" x="0.0" y="0.0" width="312" height="123"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="312" height="122.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capa" translatesAutoresizingMaskIntoConstraints="NO" id="hOO-nc-9ct">
@@ -220,7 +220,7 @@
                                         <rect key="frame" x="0.0" y="28" width="272" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XGV-Xn-4CH" id="RYQ-sf-ZdN">
-                                            <rect key="frame" x="0.0" y="0.0" width="272" height="97"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="272" height="96.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="F8J-BK-rIU">

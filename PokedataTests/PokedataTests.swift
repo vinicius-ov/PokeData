@@ -38,6 +38,18 @@ class PokedataTests: XCTestCase {
 
     }
     
+    func testBadLogin(){
+        let expectation = expectationWithDescription("Swift Expectations")
+        
+        lm.loginTrainer({failure in
+            XCTAssertNotNil(self.lm.trainer)
+            XCTAssertEqual(self.lm.trainer.name, "Ash Ketchum")
+            expectation.fulfill()
+        })
+        
+        waitForExpectationsWithTimeout(10.0, handler:nil)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
@@ -45,4 +57,11 @@ class PokedataTests: XCTestCase {
         }
     }
     
+    func testPrepareForSegue(){
+        let dest = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("daNavi")
+        let segue = UIStoryboardSegue(identifier: "gotoTrainerData", source: lm, destination: dest, performHandler: {})
+        
+        lm.prepareForSegue(segue, sender:nil)
+    }
+
 }

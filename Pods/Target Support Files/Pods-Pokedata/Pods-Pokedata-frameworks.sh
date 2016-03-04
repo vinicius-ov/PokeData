@@ -84,10 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/Gloss/Gloss.framework"
+  install_framework "Pods-Pokedata/Alamofire.framework"
+  install_framework "Pods-Pokedata/Gloss.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/Gloss/Gloss.framework"
+  install_framework "Pods-Pokedata/Alamofire.framework"
+  install_framework "Pods-Pokedata/Gloss.framework"
 fi

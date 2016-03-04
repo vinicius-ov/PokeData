@@ -24,11 +24,6 @@ class LoginViewController: UIViewController, NSURLSessionTaskDelegate {
         self.view.backgroundColor = UIColor(patternImage: image)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func doLogin(sender: AnyObject) {
         
         loginTrainer({(success:Bool) -> Void in
